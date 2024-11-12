@@ -4,9 +4,10 @@ import pages from 'src/setup/pages'
 export default [
     {
       title: 'isupply.cms.sidebar.adminGroup', //store
-      icon: 'fa-light fa-list-check',
+      icon: 'fa-light fa-cash-register',
       children: [
-        pages.qsupply.products
+        pages.qsupply.products, 
+        pages.qsupply.orders
       ]
     },
   ]

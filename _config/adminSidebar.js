@@ -7,7 +7,8 @@ export default [
       icon: 'fa-light fa-cash-register',
       children: [
         pages.qsupply.products, 
-        pages.qsupply.orders
+        pages.qsupply.orders,
+        pages.qsupply.providerProducts
       ]
     },
   ]

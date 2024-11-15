@@ -16,12 +16,15 @@ export default {
         create: {
           title: this.$tr('itask.cms.newTask'),
         },
-        showAs: 'grid',
-        allowToggleView: false,
-        grid: {
-          //colClass: 'col-12 col-sm-6 col-lg-3 col-xl-2',
-          component: () => import('modules/qcommerce/_components/admin/quotes/productCard')
+        customData: {
+          showAs: 'grid',
+          allowToggleView: false,
+          grid: {
+            //colClass: 'col-12 col-sm-6 col-lg-3 col-xl-2',
+            component: () => import('modules/qcommerce/_components/admin/quotes/productCard')
+          },
         },
+        
         read: {
           columns: [
             {name: 'id', label: this.$tr('isite.cms.form.id'), field: 'id', style: 'width: 50px'},
